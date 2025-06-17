@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Countdown Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <h1>Countdown starts now</h1>
+
+      <div class="input-section">
+        <input type="text" id="eventText" placeholder="Enter event name" />
+        <input type="date" id="eventDate" />
+        <input type="time" id="eventTime" />
+        <input type="file" id="bgImage" accept="image/*" />
+        <button onclick="startCountdown()">Start Countdown</button>
+      </div>
+
+      <div class="output-section" id="output" style="display:none;">
+        <h2>Countdown to <span id="event-name"></span></h2>
+        <div class="countdown">
+          <div><span id="days">0</span><p>Days</p></div>
+          <div><span id="hours">0</span><p>Hours</p></div>
+          <div><span id="minutes">0</span><p>Minutes</p></div>
+          <div><span id="seconds">0</span><p>Seconds</p></div>
+        </div>
+      </div>
+
+      <div id="completed" class="fancy-message"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  padding: 30px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.input-section input {
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.countdown div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90px;
+}
+
+.countdown p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #f0f0f0;
+}
+
+.fancy-message {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: pulse 1s infinite alternate;
+  color: #ffeb3b;
+  text-shadow: 0 0 10px #fff;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
